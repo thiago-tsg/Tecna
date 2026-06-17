@@ -1,0 +1,73 @@
+$primary: #EF3251;
+$secondary: #243239;
+$tertiary: #00C008;
+
+// Body
+$body-bg: #FFF;
+
+
+// Fonts
+$text-font-size: 1rem;
+$text-color: #646E6C;
+$text-font: 'Outfit', sans-serif;
+$text-font-weight: 400;
+$text-line-height: 1.5;
+$text-copy-size: 1.15rem;
+$text-copy-color: #454545;
+$text-copy-margin: 0 0 3rem 0;
+// Headers
+$header-color: #1A2429;
+$header-font: 'Outfit', sans-serif;
+$header-font-weight: 700;
+$header-line-height: 1.2;
+$header-h1: 3.13rem;
+$header-h2: 2.5em;
+$header-h3: 1.75em;
+$header-h4: 1.5em;
+$header-h5: 0.83em;
+$header-h6: 0.67em;
+// Links
+$link-color: inherit;
+$link-color-hover: $primary;
+// Botões
+$button-color: #FFF;
+$button-bg: #F14621;
+$button-hover-bg: #253132;
+$button-hover-color: #FFF;
+$button-radius: 2rem;
+$button-padding: .8rem 3rem;
+$button-font-size: 1rem;
+$button-font-weight: 700;
+$button-border: 0;
+$button-icon-size: 1.5rem;
+$button-icon-color: #fff;
+// Sombras:
+$shadow: 0 0.46875rem 2.1875rem #04091408, 0 0.9375rem 1.40625rem #04091408, 0 0.25rem 0.53125rem #0409140d, 0 0.125rem 0.1875rem #04091408;
+// Container
+$container-width: 1200px;
+$section-padding: 6rem 0;
+
+/* outfit-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/outfit-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

@@ -1,0 +1,229 @@
+#page__servico{
+  background-image: url("../images/background.png");
+  .home__hero{
+    background: none;
+    .container{
+      .col{
+        .ttl{
+          span{
+            display: block;
+          }
+        }
+        .texto{
+          width: 32rem;
+        }
+      }
+    }
+  }
+  .home__servicos{
+    .container{
+      .col{
+        background-image: url("../images/servico__dor.png");
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position: center bottom;
+        .ttl{
+          width: 45rem;
+          margin: 0 auto 2rem;
+        }
+        .specs{
+          .specs__list{
+            margin: 0 auto;
+            padding-top: 7rem;
+            li{
+              line-height: 2rem;
+              background: #fff url(../images/remove.png) no-repeat 1rem center;
+            }
+            li:nth-child(1) {
+              transform: translateX(5rem);
+            }
+            li:nth-child(3) {
+              transform: translateX(10rem);
+            }
+            li:nth-child(4) {
+              transform: translateX(2.5rem);
+            }
+            li:nth-child(5) {
+              transform: translateX(7.5rem);
+            }
+            li:nth-child(6) {
+              transform: translateX(rem);
+            }
+            li{
+              line-height: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home__etapa{
+    padding: $section-padding;
+    background-color: #ffffff;
+    .container{
+      .col {
+        padding-right: 3rem;
+
+        ul {
+          border: 1px solid;
+          padding: .5rem 1rem;
+          border-radius: .5rem;
+          margin-bottom: 1rem;
+
+          li {
+            background-repeat: no-repeat;
+            padding-left: 4rem;
+          }
+
+          .li1 {
+            background-image: url("../images/num1.png");
+          }
+
+          .li2 {
+            background-image: url("../images/num2.png");
+          }
+
+          .li3 {
+            background-image: url("../images/num3.png");
+          }
+        }
+      }
+    }
+  }
+  .home__solucoes{
+    padding: 6rem 0 4rem;
+    background-color: #ffffff;
+    .specs{
+      background: transparent  url("../images/bg-servicos.png") no-repeat right 0rem bottom;
+      background-size: auto 100%;
+    }
+    ul.specs__list{
+      list-style: none;
+      li{
+        margin: 0;
+        padding: 0 1rem 0 3.8rem;
+        line-height: 3.5rem;
+        background: white url("../images/check.svg") no-repeat 1rem center;
+        box-shadow: $shadow;
+        border-radius: 1rem;
+      }
+    }
+    img{
+      height: 12.5rem;
+    }
+  }
+  .home__resultados{
+    .container{
+      p{
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  .home__negocio{
+    background-color: #ffffff;
+    padding: 2rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #page__servico{
+    section{
+      padding: 0;
+    }
+    .tpl__header{
+      .container{
+        justify-content: center;
+        a{
+          display: none;
+        }
+      }
+    }
+    .home__hero{
+      .container{
+        height: 100%;
+        .col{
+          .texto{
+            width: auto;
+          }
+        }
+      }
+    }
+    .home__servicos{
+      .container{
+        .col{
+          background-image: none;
+          padding-bottom: 2rem;
+          .ttl{
+            width: auto;
+          }
+          .texto{
+            margin-bottom: 0;
+          }
+          .specs{
+            .specs__list{
+              padding-top: 2rem;
+              li:nth-child(1){
+                transform: translateX(0rem);
+              }
+              li:nth-child(3){
+                transform: translateX(0rem);
+              }
+              li:nth-child(4){
+                transform: translateX(0rem);
+              }
+              li:nth-child(5){
+                transform: translateX(0rem);
+              }
+              li:nth-child(6){
+                transform: translateX(0rem);
+              }
+              li{
+                width: 100%;
+                padding: 0 0 0 4rem;
+                line-height: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .home__etapa{
+      .container{
+        flex-wrap: wrap;
+        img{
+          display: none;
+        }
+      }
+    }
+    .home__solucoes{
+      .container{
+        .col{
+          .specs{
+            flex-wrap: wrap;
+            .specs__list{
+              grid-template-columns: 1fr;
+              width: 100%;
+            }
+            img{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .home__resultados{
+      padding: 6rem 0;
+    }
+    .home__negocio{
+      padding-top: 6rem;
+      .container{
+        flex-wrap: wrap;
+        img{
+          display: none;
+        }
+      }
+    }
+    .home__orcamento{
+      padding-top: 6rem;
+    }
+  }
+}

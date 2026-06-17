@@ -1,0 +1,57 @@
+.bg-slide {
+    position: relative;
+    overflow: hidden;
+    .content {
+        position: relative;
+        z-index: 2; /* Conteúdo acima do overlay */
+    }
+    &::before {
+        content: ""; /* Necessário para que o pseudo-elemento seja gerado */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Ajuste conforme necessário */
+        z-index: 1; /* Overlay acima do fundo, abaixo do conteúdo */
+        pointer-events: none; /* Garante que o overlay não interfira com a interação do usuário */
+    }
+    .slide-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0; /* Começa invisível */
+        transition: opacity 2s; /* Suaviza a transição da opacidade */
+        z-index: 0; /* Imagens de fundo abaixo do overlay */
+        animation-duration: 60s; /* Duração da animação */
+        animation-timing-function: linear; /* Fluxo contínuo da animação */
+        animation-iteration-count: infinite; /* Repete a animação indefinidamente */
+    }
+}
+@keyframes zoomOutAndMove {
+    from {
+        background-size: 110%;
+        background-position: 50% 0;
+    }
+    to {
+        background-size: 100%;
+        background-position: 50% 100%;
+    }
+}
+
+@keyframes moveHorizontal {
+    from {
+        background-size: 110%;
+        background-position: 0% 50%;
+    }
+    to {
+        background-size: 100%;
+        background-position: 100% 50%;
+    }
+}
